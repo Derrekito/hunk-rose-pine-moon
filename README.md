@@ -8,6 +8,8 @@ It shows up in hunk's in-app theme menu as **Rosé Pine Moon**.
 
 > All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
 
+![Rosé Pine Moon in hunk](./screenshot.png)
+
 ## How hunk themes work
 
 hunk ships a handful of built-in themes and **does not have a plugin system** —
