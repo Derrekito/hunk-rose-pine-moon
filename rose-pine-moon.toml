@@ -1,0 +1,79 @@
+# Rosé Pine Moon — theme for hunk (https://github.com/modem-dev/hunk)
+#
+# This is a [custom_theme] block. hunk has no plugin system, so themes are
+# defined inline in ~/.config/hunk/config.toml under theme = "custom".
+# The `label` below is what appears in hunk's theme menu.
+#
+# Palette (rose-pine/palette → moon):
+#   base #232136  surface #2a273f  overlay #393552
+#   muted #6e6a86  subtle #908caa  text #e0def4
+#   love #eb6f92  gold #f6c177  rose #ea9a97
+#   pine #3e8fb0  foam #9ccfd8  iris #c4a7e7
+#   highlightLow #2a283e  highlightMed #44415a  highlightHigh #56526e
+
+theme = "custom"
+
+[custom_theme]
+base  = "midnight"
+label = "Rosé Pine Moon"
+
+# Surfaces
+background          = "#232136"   # base
+panel              = "#2a273f"    # surface
+panelAlt           = "#393552"    # overlay
+border             = "#44415a"    # highlightMed
+text               = "#e0def4"    # text
+muted              = "#6e6a86"    # muted
+accent             = "#c4a7e7"    # iris
+accentMuted        = "#393552"    # overlay
+
+# Diff line backgrounds — added leans pine (blue), removed leans love (red),
+# chosen so the two are distinguishable by both hue and brightness.
+addedBg            = "#2b425b"    # pine, add line
+addedContentBg     = "#2f536d"    # pine, changed token (stronger)
+removedBg          = "#673c55"    # love, remove line
+removedContentBg   = "#874864"    # love, changed token (stronger)
+contextBg          = "#232136"    # base
+contextContentBg   = "#2a273f"    # surface
+movedAddedBg       = "#363d50"
+movedRemovedBg     = "#4b3148"
+
+# Diff sign gutter (the + / − glyph color)
+addedSignColor     = "#9ccfd8"    # foam
+removedSignColor   = "#eb6f92"    # love
+
+# Line numbers
+lineNumberBg       = "#2a273f"    # surface
+lineNumberFg       = "#6e6a86"    # muted
+
+# Selected hunk highlight
+selectedHunk       = "#44415a"    # highlightMed
+
+# Badges
+badgeAdded         = "#9ccfd8"    # foam
+badgeRemoved       = "#eb6f92"    # love
+badgeNeutral       = "#908caa"    # subtle
+
+# File status
+fileNew            = "#9ccfd8"    # foam
+fileDeleted        = "#eb6f92"    # love
+fileRenamed        = "#f6c177"    # gold
+fileModified       = "#c4a7e7"    # iris
+fileUntracked      = "#908caa"    # subtle
+
+# Agent / review notes
+noteBorder          = "#c4a7e7"   # iris
+noteBackground      = "#2a273f"   # surface
+noteTitleBackground = "#393552"   # overlay
+noteTitleText       = "#e0def4"   # text
+
+[custom_theme.syntax]
+default     = "#e0def4"   # text
+keyword     = "#3e8fb0"   # pine
+string      = "#f6c177"   # gold
+comment     = "#6e6a86"   # muted
+number      = "#ea9a97"   # rose
+function    = "#ea9a97"   # rose
+property    = "#9ccfd8"   # foam
+type        = "#9ccfd8"   # foam
+punctuation = "#908caa"   # subtle
